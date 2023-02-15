@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: 'Philosopher', sans-serif;
+  }
+
+  .container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0px 15px;
+  }
+  
+  header {
+	display: flex;
+	align-items: center;
+	background-color: transparent;
+	color: black;
+	flex-direction: column;
+	justify-content: center;
+	padding-top: 40px !important;
+	padding-bottom: 30px !important;
+}
+.logo {
+	margin-bottom: 20px;
+	font-size: 30px;
+}
+  
+nav ul {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+nav ul li:last-child {
+    margin-right: 0px;
+  }
+
+  nav ul li a {
+	color: #000;
+	text-decoration: none;
+	font-size: 22px;
+	font-weight: 400;
+}
+  
+nav ul ul {
+	visibility: hidden;
+    display: inherit;
+	position: absolute;
+	background-color: #f5f5f5;
+	padding: 15px 5px 15px 5px;
+	text-align: left;
+	margin-top: 10px;
+	transition: all .3s ease;
+	opacity: 0;
+	transform: translateY(20px);
+}
+  nav ul li:hover > ul {
+    visibility: visible;
+    opacity: 1;
+    transform: unset;
+    display: inherit;
+  }
+  
+  nav ul ul li {
+    margin: 0;
+    width: 200px;
+  }
+  
+  nav ul ul li a {
+    padding: 10px;
+  }
+
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text p {
+	font-size: 20px;
+	margin-bottom: 30px;
+	text-align: justify;
+}
+
+.hero {
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	gap: 22px;
+}
+.hero-image img {
+	max-width: 304px;
+}
+
+.hero-image {
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	width: 40%;
+}
+.hero-text {
+	width: 60%;
+}
+.hero {
+	display: flex;
+	gap: 22px;
+	align-items: center;
+	margin-top: 20px;
+}
+  .sub-menu-true {
+    position: relative;
+    display: inline-block;
+    padding-right: 10px;
+  }
+  
+  .sub-menu-true::before {
+	content: '';
+	position: absolute;
+	bottom: 5px;
+	right: -10px;
+	border-width: 8px 8px 0 8px;
+	border-style: solid;
+	border-color: #9e9c9c transparent transparent transparent;
+}
